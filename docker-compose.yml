@@ -16,5 +16,5 @@ services:
     container_name: darshan-ui
     image: aleyasen/darshanvis-ui
     ports:
-      - "8000:8000"
+      - "3000:3000"
 
