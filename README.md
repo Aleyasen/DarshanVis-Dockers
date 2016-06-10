@@ -6,7 +6,7 @@ Repository for Darshan docker files
  
 
 ## Get Started
-Download docker-compose.yml or clone the repo and run the following command in the directory
+Download [docker-compose.yml](https://github.com/Aleyasen/DarshanVis-Dockers/blob/master/docker-compose.yml) or clone the repo and run the following command in the directory.
 ```bash
 docker-compose up -d
 ```
