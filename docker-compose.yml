@@ -1,0 +1,15 @@
+version: '1'
+services:
+  darshan-db:
+    image: aleyasen/darshanvis-mysql
+    ports:
+    - "3306:3306"
+  darshan-api:
+    image: aleyasen/darshanvis-api
+    depends_on:
+      - darhsan-db
+  darshan-ui:
+    image: aleyasen/darshanvis-ui
+    ports:
+      - "8000:8000"
+
