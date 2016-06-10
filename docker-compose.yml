@@ -1,14 +1,19 @@
-version: '1'
+version: '2'
 services:
   darshan-db:
+    container_name: darshan-db
     image: aleyasen/darshanvis-mysql
     ports:
     - "3306:3306"
   darshan-api:
+    container_name: darshan-api
     image: aleyasen/darshanvis-api
+    ports:
+    - "8081:80"
     depends_on:
-      - darhsan-db
+      - darshan-db
   darshan-ui:
+    container_name: darshan-ui
     image: aleyasen/darshanvis-ui
     ports:
       - "8000:8000"
